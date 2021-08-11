@@ -1,0 +1,25 @@
+{
+  "name": "netflix-replica",
+  "version": "1.0.0",
+  "description": "Netflix homepage and login replica",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nalandenv/netflix-login-replica.git"
+  },
+  "keywords": [
+    "netflix",
+    "login",
+    "home",
+    "signup"
+  ],
+  "author": "Nikhil Nalande",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nalandenv/netflix-login-replica/issues"
+  },
+  "homepage": "https://github.com/nalandenv/netflix-login-replica#readme"
+}
