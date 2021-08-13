@@ -1,6 +1,6 @@
 @font-face {
-  font-family: newfont;
-  src: url("../assets/nf-icon-v1-93.woff");
+  font-family: "newfont";
+  src: url("./nf-icon-v1-93.woff");
 }
 
 body {
@@ -130,4 +130,43 @@ input[type="text"]:valid ~ .floating-label {
 .remember-label {
   align-self: center;
   display: block;
+}
+
+.content input {
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.content .checkmark {
+  width: 16px;
+  height: 16px;
+  background-color: #8c8c8c;
+  border-radius: 2px;
+  margin-right: 5px;
+}
+.checkmark:after {
+  content: "";
+  display: none;
+}
+.content input:checked ~ .checkmark {
+  background-color: #8c8c8c;
+}
+.content input:checked ~ .checkmark:after {
+  display: block;
+}
+.content .checkmark:after {
+  font-family: "newFont";
+  content: "\e804";
+  color: black;
+  font-size: 16px;
+}
+.options a {
+  color: inherit;
+  padding-top: 2px;
+  text-decoration: none;
+  align-self: center;
+}
+.options a:hover {
+  text-decoration: underline;
 }
