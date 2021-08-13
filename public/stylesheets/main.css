@@ -47,19 +47,20 @@ svg {
   margin-top: 90px;
   display: flex;
   flex-direction: column;
+  padding: 60px 68px 40px;
+}
+form {
+  height: 344px;
 }
 .login-body {
   content: "";
   height: 91px;
   display: block;
   max-width: 450px;
-  min-height: 515px;
+  min-height: 660px;
   margin: auto;
   background-color: rgba(0, 0, 0, 0.8);
   border-radius: 4px;
-}
-.form {
-  padding: 60px 68px 40px;
 }
 h1 {
   font-size: 2em;
@@ -133,10 +134,7 @@ input[type="text"]:valid ~ .floating-label {
 }
 
 .content input {
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
+  display: none;
 }
 .content .checkmark {
   width: 16px;
@@ -169,4 +167,20 @@ input[type="text"]:valid ~ .floating-label {
 }
 .options a:hover {
   text-decoration: underline;
+}
+.container-2 {
+  width: 100%;
+  display: flex;
+}
+.fb-option a {
+  margin-top: 16px;
+  display: flex;
+  font-size: 13px;
+  color: #8c8c8c;
+  text-decoration: none;
+  align-items: center;
+}
+.fb-option img {
+  width: 20px;
+  margin-right: 10px;
 }
