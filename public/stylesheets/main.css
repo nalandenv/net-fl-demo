@@ -94,6 +94,7 @@ input[type="text"]:focus {
   top: 25%;
   left: 20px;
   font-size: 18px;
+  font-weight: 100;
   cursor: text;
   color: #8c8c8c;
 }
@@ -176,11 +177,43 @@ input[type="text"]:valid ~ .floating-label {
   margin-top: 16px;
   display: flex;
   font-size: 13px;
-  color: #8c8c8c;
+  color: rgb(115, 115, 115);
   text-decoration: none;
   align-items: center;
 }
 .fb-option img {
   width: 20px;
   margin-right: 10px;
+}
+.signup-link {
+  margin-top: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgb(115, 115, 115);
+}
+.signup-link a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.signup-link a:hover {
+  text-decoration: underline;
+}
+.captcha .captcha-info {
+  margin: 13px 0;
+  font-size: 13px;
+  color: rgb(115, 115, 115);
+}
+.captcha-info a {
+  color: rgb(0, 113, 235);
+  text-decoration: none;
+}
+.hidden {
+  display: none;
+}
+.captcha-info a:hover {
+  text-decoration: underline;
+}
+#recaptcha-text {
+  font-size: 13px;
+  color: rgb(115, 115, 115);
 }
