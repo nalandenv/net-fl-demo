@@ -1,6 +1,6 @@
 {
   "name": "netflix-replica",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Netflix homepage and login replica",
   "main": "index.html",
   "repository": {
