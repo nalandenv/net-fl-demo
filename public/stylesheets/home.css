@@ -1,0 +1,54 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+.signup {
+  width: 100vw;
+  background: black;
+  overflow: hidden;
+}
+
+img {
+  object-fit: cover;
+  opacity: 0.4;
+}
+/* header styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 90px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* for vertical alignment of netflix logo */
+  align-items: center;
+}
+/* Netflix svg logo  */
+svg {
+  height: 45px;
+  width: 167px;
+  margin-left: 56px;
+  fill: #e50914;
+}
+/* styling select menu */
+select {
+  width: 94px;
+  height: 36px;
+  margin-right: 32px;
+  background-color: black;
+  color: #8c8c8c;
+  padding-left: 15px;
+  border: 1px solid white;
+}
+/* sign in button */
+.btn {
+  padding: 7px 17px;
+  background-color: #e50914;
+  border-radius: 4px;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  margin-right: 56px;
+}
