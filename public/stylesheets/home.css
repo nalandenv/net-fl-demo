@@ -5,6 +5,7 @@ body {
 }
 .signup {
   width: 100vw;
+  height: 100vh;
   background: black;
   overflow: hidden;
 }
@@ -12,6 +13,8 @@ body {
 img {
   object-fit: cover;
   opacity: 0.4;
+  width: 100vw;
+  height: 100vh;
 }
 /* header styling */
 header {
@@ -42,6 +45,10 @@ select {
   padding-left: 15px;
   border: 1px solid white;
 }
+form {
+  width: 100%;
+  box-sizing: border-box;
+}
 /* sign in button */
 .btn {
   padding: 7px 17px;
@@ -51,4 +58,100 @@ select {
   color: white;
   text-decoration: none;
   margin-right: 56px;
+}
+.sign-up-form {
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  padding: 75px 45px;
+  left: 0;
+  top: 90px;
+  width: 100%;
+}
+.signup .sign-up-form .card {
+  width: 100%;
+  padding: 75px 0;
+  max-width: 950px;
+  margin: 0 auto;
+  text-align: center;
+}
+.signup .sign-up-form h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: white;
+  margin: 0 75px;
+}
+.signup .sign-up-form h2 {
+  font-size: 1.625rem;
+  color: white;
+  margin: 16px 75px;
+}
+.signup .sign-up-form h3 {
+  font-size: 1.2rem;
+  color: white;
+  padding: 0 5%;
+  padding-bottom: 20px;
+}
+.email {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+/* form element div */
+.form-element {
+  position: relative;
+  padding-bottom: 16px;
+  width: 55%;
+}
+/* Input element */
+input[type="text"] {
+  box-sizing: border-box;
+  width: 100%;
+  font-family: inherit;
+  padding: 10px;
+  padding-bottom: 0;
+  height: 70px;
+  font-size: 18px;
+  border: 1px solid rgb(140, 140, 140);
+  background-color: #ffffff;
+  color: black;
+}
+/* for removing the outline which is applied by browser when focused */
+input[type="text"]:focus {
+  outline: none;
+}
+/* Label which stays on top of the input */
+.floating-label {
+  box-sizing: border-box;
+  position: absolute;
+  top: 30%;
+  left: 20px;
+  font-size: 18px;
+  font-weight: 100;
+  cursor: text;
+  color: #8c8c8c;
+  transition: all 200ms;
+}
+/* Label which shrinks and moves to the top of input when the input is focused and has text inside it  */
+input[type="text"]:focus ~ .floating-label,
+input[type="text"]:valid ~ .floating-label {
+  font-size: 14px;
+  font-weight: 700;
+  top: 7px;
+  left: 10px;
+  transition: all 200ms;
+}
+
+#start {
+  width: 25%;
+  height: 70px;
+  background-color: #e50914;
+  border: none;
+  color: white;
+  font-size: 1.625rem;
+  cursor: pointer;
+}
+#start:hover {
+  background-color: #ff1b27;
 }
