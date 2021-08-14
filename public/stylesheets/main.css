@@ -7,21 +7,26 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   background: url("../assets/images/background_large.jpg");
   background-size: cover;
+  height: auto;
   font-size: 16px;
   color: #333;
+}
+.wrapper {
+  height: 1099px;
 }
 button,
 input {
   font: inherit;
 }
 .background {
-  position: absolute;
-  content: "";
+  position: fixed;
   top: 0;
   left: 0;
+  content: "";
   width: 100%;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
+  background-size: cover;
   z-index: -1;
 }
 .container {
@@ -216,4 +221,46 @@ input[type="text"]:valid ~ .floating-label {
 #recaptcha-text {
   font-size: 13px;
   color: rgb(115, 115, 115);
+}
+#recaptcha-text a {
+  color: rgb(0, 113, 235);
+  text-decoration: none;
+}
+#recaptcha-text a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  display: block;
+  position: relative;
+  padding-bottom: 10px;
+  margin-top: 90px;
+}
+footer .site-footer {
+  width: 100%;
+  height: 238px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    background-color: #000000;
+  }
+  svg {
+    margin-left: 20px;
+  }
+  .login-body {
+    width: 100%;
+    margin: 0;
+    max-width: 100%;
+    background-color: #000000;
+  }
+  .form {
+    padding: 0 5%;
+  }
+  .container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 }
