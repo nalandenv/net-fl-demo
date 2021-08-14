@@ -5,12 +5,12 @@ body {
 }
 .signup {
   width: 100vw;
-  height: 100vh;
+  height: 800px;
   background: black;
   overflow: hidden;
 }
 
-img {
+.signup img {
   object-fit: cover;
   opacity: 0.4;
   width: 100vw;
@@ -131,7 +131,7 @@ input[type="text"]:focus {
   font-weight: 100;
   cursor: text;
   color: #8c8c8c;
-  transition: all 200ms;
+  transition: all 100ms;
 }
 /* Label which shrinks and moves to the top of input when the input is focused and has text inside it  */
 input[type="text"]:focus ~ .floating-label,
@@ -140,7 +140,7 @@ input[type="text"]:valid ~ .floating-label {
   font-weight: 700;
   top: 7px;
   left: 10px;
-  transition: all 200ms;
+  transition: all 100ms;
 }
 
 #start {
@@ -154,4 +154,41 @@ input[type="text"]:valid ~ .floating-label {
 }
 #start:hover {
   background-color: #ff1b27;
+}
+
+/* Data card */
+.data {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 70px 45px;
+  background-color: black;
+  border-top: 7px solid rgb(50, 50, 50);
+}
+.data .content {
+  width: 70%;
+  box-sizing: border-box;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+}
+.info-card {
+  width: 60%;
+  padding-right: 3rem;
+}
+.info-card h1 {
+  color: white;
+  font-size: 4em;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.info-card h2 {
+  color: white;
+  font-size: 1.625rem;
+  margin: 0.75em 0 0.25em;
+}
+.video-card {
+  width: 40%;
+  box-sizing: border-box;
+}
+.video-card img {
 }
