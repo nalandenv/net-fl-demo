@@ -9,111 +9,109 @@
     <link rel="stylesheet" href="public/stylesheets/main.css" />
   </head>
   <body>
-    <div class="background"></div>
+    <!-- <div class="background"></div> -->
     <div class="wrapper">
-      <div class="container">
-        <header>
-          <a href=""
-            ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 111 30">
-              <path
-                d="M105.062 14.28 111 30c-1.75-.25-3.499-.563-5.28-.845l-3.345-8.686-3.437 7.969c-1.687-.282-3.344-.376-5.031-.595l6.031-13.75L94.468 0h5.063l3.062 7.874L105.875 0h5.124l-5.937 14.28zM90.47 0h-4.594v27.25c1.5.094 3.062.156 4.594.343V0zm-8.563 26.937c-4.187-.281-8.375-.53-12.656-.625V0h4.687v21.875c2.688.062 5.375.28 7.969.405v4.657zM64.25 10.657v4.687h-6.406V26H53.22V0h13.125v4.687h-8.5v5.97h6.406zm-18.906-5.97V26.25c-1.563 0-3.156 0-4.688.062V4.687h-4.844V0h14.406v4.687h-4.874zM30.75 15.593c-2.062 0-4.5 0-6.25.095v6.968c2.75-.188 5.5-.406 8.281-.5v4.5l-12.968 1.032V0H32.78v4.687H24.5V11c1.813 0 4.594-.094 6.25-.094v4.688zM4.78 12.968v16.375A104.74 104.74 0 0 0 0 30V0h4.469l6.093 17.032V0h4.688v28.062c-1.656.282-3.344.376-5.125.625L4.78 12.968z"
-              /></svg
-          ></a>
-        </header>
-        <div class="login-body">
-          <div class="form">
-            <form action="">
-              <h1>Sign In</h1>
-              <div class="form-element">
-                <input type="text" name="username" id="username" required />
-                <label class="floating-label" for="username"
-                  >Email or Phone Number</label
+      <img
+        class="background-image"
+        src="./public/assets/images/background_large.jpg"
+        alt=""
+      />
+    </div>
+    <div class="container">
+      <header>
+        <a href=""
+          ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 111 30">
+            <path
+              d="M105.062 14.28 111 30c-1.75-.25-3.499-.563-5.28-.845l-3.345-8.686-3.437 7.969c-1.687-.282-3.344-.376-5.031-.595l6.031-13.75L94.468 0h5.063l3.062 7.874L105.875 0h5.124l-5.937 14.28zM90.47 0h-4.594v27.25c1.5.094 3.062.156 4.594.343V0zm-8.563 26.937c-4.187-.281-8.375-.53-12.656-.625V0h4.687v21.875c2.688.062 5.375.28 7.969.405v4.657zM64.25 10.657v4.687h-6.406V26H53.22V0h13.125v4.687h-8.5v5.97h6.406zm-18.906-5.97V26.25c-1.563 0-3.156 0-4.688.062V4.687h-4.844V0h14.406v4.687h-4.874zM30.75 15.593c-2.062 0-4.5 0-6.25.095v6.968c2.75-.188 5.5-.406 8.281-.5v4.5l-12.968 1.032V0H32.78v4.687H24.5V11c1.813 0 4.594-.094 6.25-.094v4.688zM4.78 12.968v16.375A104.74 104.74 0 0 0 0 30V0h4.469l6.093 17.032V0h4.688v28.062c-1.656.282-3.344.376-5.125.625L4.78 12.968z"
+            /></svg
+        ></a>
+      </header>
+      <div class="login-body">
+        <div class="form">
+          <form action="">
+            <h1>Sign In</h1>
+            <div class="form-element">
+              <input type="text" name="username" id="username" required />
+              <label class="floating-label" for="username"
+                >Email or Phone Number</label
+              >
+            </div>
+            <div class="form-element">
+              <input type="text" name="password" id="password" required />
+              <label class="floating-label" for="password">Password</label>
+            </div>
+            <button class="btn">Sign In</button>
+            <div class="options">
+              <label for="remember" class="content">
+                <input
+                  class="checkbox-original"
+                  type="checkbox"
+                  name="remember"
+                  id="remember"
+                />
+                <span class="checkmark"></span>
+                <label class="remember-label" for="remember">Remember Me</label>
+              </label>
+              <div>
+                <a href="#">Need Help?</a>
+              </div>
+            </div>
+          </form>
+          <div class="container-2">
+            <div class="info-body">
+              <div class="fb-option">
+                <a href=""
+                  ><img
+                    src="./public/assets/images/fb_logo.png"
+                    alt="facebook"
+                  /><span class="fb-label">Login with Facebook</span></a
                 >
               </div>
-              <div class="form-element">
-                <input type="text" name="password" id="password" required />
-                <label class="floating-label" for="password">Password</label>
+              <div class="signup-link">
+                New to Netflix? <a href="">Sign up now</a>.
               </div>
-              <button class="btn">Sign In</button>
-              <div class="options">
-                <label for="remember" class="content">
-                  <input
-                    class="checkbox-original"
-                    type="checkbox"
-                    name="remember"
-                    id="remember"
-                  />
-                  <span class="checkmark"></span>
-                  <label class="remember-label" for="remember"
-                    >Remember Me</label
-                  >
-                </label>
+              <div class="captcha">
+                <p class="captcha-info">
+                  This page is protected by Google reCAPTCHA to ensure you're
+                  not a bot. <a id="learn" href="#">Learn More.</a>
+                </p>
                 <div>
-                  <a href="#">Need Help?</a>
-                </div>
-              </div>
-            </form>
-            <div class="container-2">
-              <div class="info-body">
-                <div class="fb-option">
-                  <a href=""
-                    ><img
-                      src="./public/assets/images/fb_logo.png"
-                      alt="facebook"
-                    /><span class="fb-label">Login with Facebook</span></a
-                  >
-                </div>
-                <div class="signup-link">
-                  New to Netflix? <a href="">Sign up now</a>.
-                </div>
-                <div class="captcha">
-                  <p class="captcha-info">
-                    This page is protected by Google reCAPTCHA to ensure you're
-                    not a bot. <a id="learn" href="#">Learn More.</a>
-                  </p>
-                  <div>
-                    <span
-                      id="recaptcha-text"
-                      class="hidden"
-                      data-uia="recaptcha-disclosure-text"
-                      >The information collected by Google reCAPTCHA is subject
-                      to the Google
-                      <a
-                        href="https://policies.google.com/privacy"
-                        id="recaptcha-privacy-link"
-                        data-uia="recaptcha-privacy-link"
-                        target="_blank"
-                        >Privacy Policy</a
-                      >
-                      and
-                      <a
-                        href="https://policies.google.com/terms"
-                        id="recaptcha-tos-link"
-                        data-uia="recaptcha-tos-link"
-                        target="_blank"
-                        >Terms of Service</a
-                      >, and is used for providing, maintaining, and improving
-                      the reCAPTCHA service and for general security purposes
-                      (it is not used for personalised advertising by
-                      Google).</span
+                  <span
+                    id="recaptcha-text"
+                    class="hidden"
+                    data-uia="recaptcha-disclosure-text"
+                    >The information collected by Google reCAPTCHA is subject to
+                    the Google
+                    <a
+                      href="https://policies.google.com/privacy"
+                      id="recaptcha-privacy-link"
+                      data-uia="recaptcha-privacy-link"
+                      target="_blank"
+                      >Privacy Policy</a
                     >
-                  </div>
+                    and
+                    <a
+                      href="https://policies.google.com/terms"
+                      id="recaptcha-tos-link"
+                      data-uia="recaptcha-tos-link"
+                      target="_blank"
+                      >Terms of Service</a
+                    >, and is used for providing, maintaining, and improving the
+                    reCAPTCHA service and for general security purposes (it is
+                    not used for personalised advertising by Google).</span
+                  >
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- Footer -->
-      <footer>
-        <div class="site-footer">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque odio
-          natus culpa. Neque earum ipsum eius itaque enim alias odit voluptas
-          repellat rerum! Eius provident obcaecati nulla nobis! Illum,
-          blanditiis.
-        </div>
-      </footer>
     </div>
+    <!-- Footer -->
+    <footer>
+      <div class="site-footer">x</div>
+    </footer>
+
     <script src="public/scripts/index.js"></script>
   </body>
 </html>

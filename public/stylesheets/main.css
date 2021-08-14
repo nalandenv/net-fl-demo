@@ -5,14 +5,23 @@
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background: url("../assets/images/background_large.jpg");
-  background-size: cover;
-  height: auto;
+  /* background: url("../assets/images/background_large.jpg");
+  background-size: cover; */
+  /* height: auto; */
   font-size: 16px;
   color: #333;
 }
 .wrapper {
-  height: 1099px;
+  position: relative;
+}
+.background-image {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border: none;
+  border-image-repeat: stretch;
 }
 button,
 input {
@@ -233,7 +242,7 @@ input[type="text"]:valid ~ .floating-label {
 footer {
   display: block;
   position: relative;
-  padding-bottom: 10px;
+  box-sizing: border-box;
   margin-top: 90px;
 }
 footer .site-footer {
@@ -241,7 +250,13 @@ footer .site-footer {
   height: 238px;
   background-color: rgba(0, 0, 0, 0.8);
 }
-
+@media screen and (min-width: 2144px) {
+  footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}
 @media screen and (max-width: 600px) {
   header {
     background-color: #000000;
