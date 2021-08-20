@@ -112,12 +112,14 @@ input[type="text"]:focus {
   font-weight: 100;
   cursor: text;
   color: #8c8c8c;
+  transition: all 100ms;
 }
 /* Label which shrinks and moves to the top of input when the input is focused and has text inside it  */
 input[type="text"]:focus ~ .floating-label,
 input[type="text"]:valid ~ .floating-label {
   font-size: 11px;
   top: 7px;
+  transition: all 100ms;
 }
 /* sign in button */
 .btn {
