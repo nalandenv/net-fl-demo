@@ -77,18 +77,18 @@ form {
   text-align: center;
 }
 .signup .sign-up-form h1 {
-  font-size: 4rem;
+  font-size: 4em;
   font-weight: 700;
   color: white;
   margin: 0 75px;
 }
 .signup .sign-up-form h2 {
-  font-size: 1.625rem;
+  font-size: 1.625em;
   color: white;
   margin: 16px 75px;
 }
 .signup .sign-up-form h3 {
-  font-size: 1.2rem;
+  font-size: 1.2em;
   color: white;
   padding: 0 5%;
   padding-bottom: 20px;
@@ -161,7 +161,7 @@ input[type="text"]:valid ~ .floating-label {
 .data {
   width: 100%;
   box-sizing: border-box;
-  padding: 70px 45px;
+  padding: 0 45px;
   background-color: black;
   border-top: 7px solid rgb(50, 50, 50);
   border-bottom: 7px solid rgb(50, 50, 50);
@@ -177,7 +177,7 @@ hr {
   width: 60%;
   box-sizing: border-box;
   display: flex;
-  margin: 0 auto;
+  margin: 70px auto;
   align-items: center;
 }
 .content:nth-of-type(2n) {
@@ -228,10 +228,82 @@ hr {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
+.download {
+  display: flex;
+  z-index: 7;
+  position: absolute;
+  flex-direction: row;
+  padding: 8px 12px;
+  width: 60%;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 84px;
+  background-color: black;
+  border-radius: 0.75em;
+  border: 2px solid #303030;
+}
+.download img {
+  box-sizing: border-box;
+  margin-right: 16px;
+  flex: 2;
+}
+.label-img {
+  display: flex;
+  flex-direction: column;
+  margin: 0.3em 0;
+  justify-content: center;
+  flex: 8;
+}
+.label-img .head-ing {
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5em;
+}
+.label-img .downloading {
+  font-size: 14.4px;
+  color: #0071eb;
+}
+#gif {
+  flex: 1;
+  margin: 0;
+  width: 48px;
+  height: 48px;
+  align-self: center;
+}
+.faq-container {
+  padding: 70px 45px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+.faq-container h1 {
+  font-size: 3em;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+@media screen and (max-width: 1200px) {
+  .data .content {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 700px) {
   body {
-    font-size: 10px !important;
+    font-size: 10px;
+  }
+  #start {
+    font-size: 16px;
+    flex: 3;
+  }
+  .form-element {
+    flex: 9;
+  }
+  .signup .sign-up-form h1 {
+    margin: 0;
+  }
+  .signup .sign-up-form h2 {
+    margin: 16px 0;
   }
   .data {
     margin-right: 0;
@@ -240,7 +312,6 @@ hr {
   .content:nth-of-type(1n) {
     width: 100%;
     text-align: center;
-    margin: 0 auto;
     flex-direction: column;
   }
   .info-card {
