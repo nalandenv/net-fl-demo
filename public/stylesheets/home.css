@@ -1,11 +1,15 @@
+@font-face {
+  font-family: "netflixSansMd";
+  src: url("../assets/fonts/NetflixSansRg.woff2");
+}
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "netflixSansMd", Helvetica, Arial, sans-serif;
   font-size: 16px;
   color: #333;
   overflow-x: hidden;
 }
 .signup {
-  width: 100vw;
+  width: 100%;
   height: 800px;
   background: black;
   overflow: hidden;
@@ -105,6 +109,7 @@ form {
   padding-bottom: 16px;
   width: 55%;
 }
+
 /* Input element */
 input[type="text"] {
   box-sizing: border-box;
@@ -333,12 +338,76 @@ hr {
   font-size: 18px;
   margin-bottom: 12px;
 }
+
+/* footer of the page */
+footer {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  padding-top: 40px;
+  background-color: #000000;
+}
+/* main container of content in footer */
+footer .site-footer {
+  max-width: 1000px;
+  padding: 30px 0;
+  margin: 0 auto;
+  font-size: 16px;
+  color: #8c8c8c;
+}
+/* footer-top for contact link */
+.footer-top {
+  margin: 0 0 30px;
+}
+/* footer-link is for information links */
+.footer-link {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1000px;
+}
+/* styling each li */
+.footer-link li {
+  min-width: 100px;
+  vertical-align: top;
+  display: flex;
+  width: 25%;
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+.site-footer a {
+  color: inherit;
+  text-decoration: none;
+}
+.site-footer a:hover {
+  text-decoration: underline;
+}
+/* div for language selector */
+.language-selector {
+  margin-top: 20px;
+}
+/* styling the select tag */
+.language-selector select {
+  width: 121px;
+  height: 48px;
+  background-color: black;
+  color: #8c8c8c;
+  padding-left: 15px;
+}
+.site-footer #net-ind {
+  margin-top: 30px;
+  font-size: 14px;
+}
+
 @media screen and (max-width: 1200px) {
   .data .content {
     width: 100%;
   }
+  .faq {
+    width: 70%;
+  }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   body {
     font-size: 10px;
   }
@@ -369,6 +438,9 @@ hr {
   }
   .signup .sign-up-form h1 {
     margin: 0;
+  }
+  .faq {
+    width: 100%;
   }
   .signup .sign-up-form h2 {
     margin: 16px 0;

@@ -3,9 +3,13 @@
   font-family: "newfont";
   src: url("./nf-icon-v1-93.woff");
 }
+@font-face {
+  font-family: "netflixSansRg";
+  src: url("../assets/fonts/NetflixSansRg.woff2");
+}
 /* Setting global css and background image */
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "netflixSansRg", Helvetica, Arial, sans-serif;
   background: url("../assets/images/background_large.jpg");
   background-size: cover;
   height: auto;
